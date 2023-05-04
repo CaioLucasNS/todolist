@@ -1,15 +1,11 @@
-import { Text, View } from "react-native";
+import { StatusBar } from "expo-status-bar";
+import { Home } from "./src/screens/Home";
 
 export default function App() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>To Do List</Text>
-    </View>
+    <>
+      <StatusBar style="light" translucent />
+      <Home />
+    </>
   );
 }

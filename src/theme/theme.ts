@@ -13,6 +13,7 @@ export const theme = {
     blue: "#4EA8DE",
     blueDark: "#1E6F9F",
     danger: "#E25858",
+    white: "#FFF",
   },
 
   fonts: {

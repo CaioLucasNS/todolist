@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: theme.colors.gray400,
     alignItems: "center",
-    justifyContent: "center",
+    // justifyContent: "center",
   },
   notTaskTitle: {
     color: theme.colors.gray200,

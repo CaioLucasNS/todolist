@@ -1,6 +1,8 @@
-import { Text, SafeAreaView, View } from "react-native";
+import { View } from "react-native";
+
 import { Header } from "../../components/Header";
 import { NewTaskInput } from "../../components/NewTaskInput";
+import { NoTaskMessage } from "../../components/NoTaskMessage";
 import { TaskStatus } from "../../components/TaskStatus";
 
 import { styles } from "./styles";
@@ -16,12 +18,7 @@ export function Home() {
 
           <TaskStatus />
 
-          <Text style={styles.notTaskTitle}>
-            Você ainda não tem tarefas cadastradas
-          </Text>
-          <Text style={styles.notTaskDescription}>
-            Crie tarefas e organize seus itens a fazer
-          </Text>
+          <NoTaskMessage />
         </View>
       </View>
     </>

@@ -10,16 +10,4 @@ export const styles = StyleSheet.create({
   content: {
     marginHorizontal: 24,
   },
-  notTaskTitle: {
-    color: theme.colors.gray200,
-    fontSize: theme.fonts.md,
-    fontWeight: "400",
-    lineHeight: 20,
-  },
-  notTaskDescription: {
-    color: theme.colors.gray300,
-    fontSize: theme.fonts.md,
-    fontWeight: "400",
-    lineHeight: 20,
-  },
 });

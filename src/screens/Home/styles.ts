@@ -4,9 +4,11 @@ import { theme } from "../../theme/theme";
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: theme.colors.gray400,
+    backgroundColor: theme.colors.gray600,
     alignItems: "center",
-    // justifyContent: "center",
+  },
+  content: {
+    marginHorizontal: 24,
   },
   notTaskTitle: {
     color: theme.colors.gray200,

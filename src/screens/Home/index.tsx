@@ -20,11 +20,11 @@ export function Home() {
         <View style={styles.content}>
           <NewTaskInput />
 
-          <TaskStatus hasDivider={tasks.length > 0} />
+          <TaskStatus hasDivider={tasks.length === 0} />
 
-          {tasks.length > 0 && <NoTaskMessage />}
+          {tasks.length === 0 && <NoTaskMessage />}
 
-          <NewTask />
+          {/* <NewTask /> */}
         </View>
       </View>
     </>

@@ -5,11 +5,8 @@ export const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     justifyContent: "space-between",
-
     marginTop: 32,
     paddingBottom: 21,
-    borderBottomWidth: 1,
-    borderBottomColor: theme.colors.gray400,
   },
   content: {
     flexDirection: "row",

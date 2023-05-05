@@ -9,6 +9,7 @@ export const styles = StyleSheet.create({
   image: {
     width: 56,
     height: 56,
+    marginBottom: 16,
   },
   title: {
     color: theme.colors.gray200,

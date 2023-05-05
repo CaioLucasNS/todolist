@@ -6,14 +6,23 @@ import { Entypo } from "@expo/vector-icons";
 import { theme } from "../../theme/theme";
 import { styles } from "./styles";
 
-export function NewTask() {
+type Props = {
+  text: string;
+  onDelete: () => void;
+  onChecked: () => void;
+};
+
+export function NewTask({ text, onDelete, onChecked }: Props) {
   const [checkbox, setCheckbox] = useState(false);
 
   return (
     <View style={styles.container}>
       <TouchableOpacity
         style={checkbox ? styles.checked : styles.unchecked}
-        onPress={() => setCheckbox(!checkbox)}
+        onPress={() => {
+          onChecked();
+          setCheckbox(!checkbox);
+        }}
       >
         {checkbox && (
           <Entypo name="check" size={10} color={theme.colors.gray100} />
@@ -29,10 +38,10 @@ export function NewTask() {
           },
         ]}
       >
-        Texto da task Texto da task Texto da task Texto da task Texto da task
+        {text}
       </Text>
 
-      <TouchableOpacity onPress={() => {}}>
+      <TouchableOpacity onPress={onDelete}>
         <EvilIcons name="trash" size={26} color={theme.colors.gray300} />
       </TouchableOpacity>
     </View>

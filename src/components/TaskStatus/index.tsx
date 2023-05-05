@@ -6,9 +6,11 @@ import { styles } from "./styles";
 
 type Props = {
   hasDivider: boolean;
+  created: number;
+  concluded: number;
 };
 
-export function TaskStatus({ hasDivider }: Props) {
+export function TaskStatus({ created, concluded, hasDivider }: Props) {
   return (
     <View
       style={[
@@ -19,8 +21,8 @@ export function TaskStatus({ hasDivider }: Props) {
         },
       ]}
     >
-      <TaskStatusItem status="created" />
-      <TaskStatusItem status="concluded" />
+      <TaskStatusItem status="created" number={created} />
+      <TaskStatusItem status="concluded" number={concluded} />
     </View>
   );
 }
